@@ -401,6 +401,7 @@
             box-shadow: 0 3px 8px 0 rgba(116,129,141,.1);
             border-radius: 0.25rem;
             overflow: hidden;
+            position: relative;
             transition: .25s ease-in-out;
         }
         section#recent-work .work.hide {
@@ -409,11 +410,33 @@
             opacity: 0;
         }
         section#recent-work .work>figure {margin:0}
+        section#recent-work .img-link {display:block}
         section#recent-work .work img {
             display: block;
             width: 100%;
             max-width: 300px;
             height: auto;
+        }
+        section#recent-work .work .info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 1rem;
+            color: #fff;
+            font-size: 0.813rem;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            background: rgb(0,0,0);
+            background: -moz-linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.89) 100%);
+            background: -webkit-linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.89) 100%);
+            background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.89) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+        }
+        section#recent-work .work .title {
+            font-weight: 700;
+            font-size: 0.875rem;
         }
 
         #footer {
@@ -657,37 +680,93 @@
             <div class="works">
                 <article class="work design" data-type="design">
                     <figure>
-                        <img src="assets/img/shot_easy_listening.jpg" alt="easy listening promotions logo">
+                        <a href="#" class="img-link" target="_blank" rel="nofollow">
+                            <img src="assets/img/shot_easy_listening.jpg" alt="easy listening promotions logo">
+                            <span class="info">
+                                <span class="title">Easy Listening Promotions</span>
+                                <span class="tags">
+                                    Design
+                                </span>
+                            </span>
+                        </a>
                     </figure>
                 </article>
                 <article class="work design development" data-type="development design">
                     <figure>
-                        <img src="assets/img/shot_ecm.jpg" alt="ecm site">
+                        <a href="https://www.ecmtt.com" class="img-link" target="_blank" rel="nofollow">
+                            <img src="assets/img/thumbs/ecmweb.jpg" alt="ecm site">
+                            <span class="info">
+                                <span class="title">ECM Website Re-Design</span>
+                                <span class="tags">
+                                    Design, Development, Laravel
+                                </span>
+                            </span>
+                        </a>
                     </figure>
                 </article>
                 <article class="work design development" data-type="development design">
                     <figure>
-                        <img src="assets/img/shot_streamlurkers.jpg" alt="streamlurkers site">
+                        <a href="https://streamlurkers.com" class="img-link" target="_blank" rel="nofollow">
+                            <img src="assets/img/shot_streamlurkers.jpg" alt="streamlurkers site">
+                            <span class="info">
+                                <span class="title">StreamLurkers</span>
+                                <span class="tags">
+                                    Development, Lumen, Twitch API
+                                </span>
+                            </span>
+                        </a>
                     </figure>
                 </article>
                 <article class="work design development" data-type="development design">
                     <figure>
-                        <img src="assets/img/shot_ezpoll.jpg" alt="ezpoll site">
+                        <a href="https://ezpoll.me" class="img-link" target="_blank" rel="nofollow">
+                            <img src="assets/img/shot_ezpoll.jpg" alt="ezpoll site">
+                            <span class="info">
+                                <span class="title">ezPoll</span>
+                                <span class="tags">
+                                    Design, Development, Laravel
+                                </span>
+                            </span>
+                        </a>
                     </figure>
                 </article>
                 <article class="work design" data-type="design">
                     <figure>
-                        <img src="assets/img/shot_ream.jpg" alt="ream logo">
+                        <a href="#" class="img-link" target="_blank" rel="nofollow">
+                            <img src="assets/img/shot_ream.jpg" alt="ream logo">
+                            <span class="info">
+                                <span class="title">REAM Studio</span>
+                                <span class="tags">
+                                    Design
+                                </span>
+                            </span>
+                        </a>
                     </figure>
                 </article>
                 <article class="work design development" data-type="development design">
                     <figure>
-                        <img src="assets/img/shot_venuestop.jpg" alt="venuestop site">
+                        <a href="#" class="img-link" target="_blank" rel="nofollow">
+                            <img src="assets/img/shot_venuestop.jpg" alt="venuestop site">
+                            <span class="info">
+                                <span class="title">VenueStop</span>
+                                <span class="tags">
+                                    Design, Development, Laravel (Inactive)
+                                </span>
+                            </span>
+                        </a>
                     </figure>
                 </article>
                 <article class="work design" data-type="design">
                     <figure>
-                        <img src="assets/img/shot_webnix.jpg" alt="webnix logo">
+                        <a href="#" class="img-link" target="_blank" rel="nofollow">
+                            <img src="assets/img/shot_webnix.jpg" alt="webnix logo">
+                            <span class="info">
+                                <span class="title">Webnix</span>
+                                <span class="tags">
+                                    Design
+                                </span>
+                            </span>
+                        </a>
                     </figure>
                 </article>
             </div>
